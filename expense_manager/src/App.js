@@ -1,6 +1,5 @@
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
-
+import Expenses from './components/Expenses';
 function App() {
 
   const expenses = [
@@ -33,11 +32,7 @@ function App() {
   return (
     <div className="App">
       This works!
-      <ExpenseItem title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date.toISOString()}></ExpenseItem>
-      <ExpenseItem title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date.toISOString()}></ExpenseItem>
-      <ExpenseItem title={expenses[2].title} amount={expenses[2].amount} date={expenses[2].date.toISOString()}></ExpenseItem>
-      <ExpenseItem title={expenses[3].title} amount={expenses[3].amount} date={expenses[3].date.toISOString()}></ExpenseItem>
-      <ExpenseItem title={expenses[4].title} amount={expenses[4].amount} date={expenses[4].date.toISOString()}></ExpenseItem>
+     <Expenses expenses={expenses} />
     </div>
   );
 }

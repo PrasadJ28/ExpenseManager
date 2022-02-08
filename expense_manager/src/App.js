@@ -1,6 +1,7 @@
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
 import Card from './components/UI/Card'
+import NewExpense from './components/NewExpense/NewExpense';
 const App = () => {
 
   const expenses = [
@@ -32,7 +33,7 @@ const App = () => {
   ];
   return (
     <Card className="App">
-      This works!
+      T<NewExpense/>
      <Expenses expenses={expenses} />
     </Card>
   );
